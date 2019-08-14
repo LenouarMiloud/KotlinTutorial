@@ -56,5 +56,24 @@ fun main(args: Array<String>) {
         print("The element at index ${index} has a value ${value}")
 
 
+    /**
+     * we can store many value in one variable
+     */
+
+    var listOfProgrammingLanguage = listOf<String>("JAVA","KOTLIN","C","PYTHON")
+    // we use listOf to create Immutable array ( غير قابل للتغيير) Immutable = read Only
+    //so we can't use this instruction listOfProgrammingLanguage[0] = "C++"
+    //to use a Mutable List = not read Only
+    println(listOfProgrammingLanguage[2])
+
+    var listOfMarks = mutableListOf<Double>(15.5,12.5,13.00,9.5,5.25)
+    for(i in listOfMarks)
+        print(i)
+
+    //we can use the function add(index,value) | removeAt(index)
+    listOfMarks.add(2,10.5)
+    listOfMarks.removeAt(3)
+
+
 
 }
